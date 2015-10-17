@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\SP_LaserShark</sprite>
     <sprite>sprites\SP_LaserBolt</sprite>
+    <sprite>sprites\enemy01</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_Water</background>
@@ -16,6 +17,7 @@
   <objects name="objects">
     <object>objects\OBJ_LaserShark</object>
     <object>objects\OBJ_LaserBolt</object>
+    <object>objects\OBJ_Enemy01</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RM_Level</room>
