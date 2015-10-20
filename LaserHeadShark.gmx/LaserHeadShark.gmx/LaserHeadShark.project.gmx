@@ -18,6 +18,7 @@
     <object>objects\OBJ_LaserShark</object>
     <object>objects\OBJ_LaserBolt</object>
     <object>objects\OBJ_Enemy01</object>
+    <object>objects\OBJ_Spawn</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RM_Level</room>
