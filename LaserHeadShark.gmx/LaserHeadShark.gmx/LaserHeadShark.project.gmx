@@ -14,11 +14,15 @@
     <background>background\BG_Water</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\f_score</font>
+  </fonts>
   <objects name="objects">
     <object>objects\OBJ_LaserShark</object>
     <object>objects\OBJ_LaserBolt</object>
     <object>objects\OBJ_Enemy01</object>
     <object>objects\OBJ_Spawn</object>
+    <object>objects\OBJ_Score</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\RM_Level</room>

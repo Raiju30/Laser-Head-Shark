@@ -32,6 +32,43 @@ healthPoints = 100;
         </arguments>
       </action>
     </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(healthPoints &lt;= 0)
+{
+    score += 10;
+}
+else
+{
+    if (score != 0)
+    {
+        score -= 5;
+    }
+    else
+    {
+        score = 0;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -55,6 +92,10 @@ if healthPoints &lt;= 0
 {   
     instance_destroy();    
 }
+
+//Limit Movement to stay within the border of the game
+y = min(y, room_height - 30);
+y = max(y, 100);
 </string>
           </argument>
         </arguments>
@@ -124,6 +165,8 @@ if healthPoints &lt;= 0
           <argument>
             <kind>1</kind>
             <string>instance_destroy();
+
+
 </string>
           </argument>
         </arguments>
