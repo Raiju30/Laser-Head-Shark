@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>friction = .5;
-healthPoints = 100;
 </string>
           </argument>
         </arguments>
@@ -72,8 +71,7 @@ healthPoints = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Player Shoot
-if (keyboard_check(vk_space))
+            <string>if (keyboard_check(vk_space))
 {
     if(alarm[0] = -1)
     {
@@ -82,24 +80,24 @@ if (keyboard_check(vk_space))
     //TODO: FIX THE SPAWN POINT WHEN MOVING UP AND DOWN
 }
 
-//Player Movement
+
 //Limit Movement to stay within the border of the game
 
 x = min(x, room_width - 70);
 x = max(x, 70);
 y = min(y, room_height - 30);
-y = max(y, 100);
+y = max(y, 35);
 
 //Movement Controls Begin
 
 if (keyboard_check(vk_up))
 {
-    vspeed = -3;
+    vspeed = -2;
     image_angle = 10;
 }
 else if (keyboard_check(vk_down))
 {
-    vspeed = 3;
+    vspeed = 2;
     image_angle = 350;
 }
 else
@@ -113,37 +111,9 @@ if (keyboard_check(vk_left))
 }
 else if (keyboard_check(vk_right))
 {
-    hspeed = 3;
+    hspeed = 2;
 }
 // Movement Controls End
-
-//Player Death
-image_alpha = healthPoints/100;
-if healthPoints &lt;= 0
-game_end();
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="OBJ_Enemy01">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>other.healthPoints -= 100;
 </string>
           </argument>
         </arguments>
