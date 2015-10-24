@@ -52,6 +52,8 @@
   </views>
   <instances>
     <instance objName="OBJ_LaserShark" x="96" y="96" name="inst_4D51BCAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_Spawn" x="928" y="96" name="inst_CA856D4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="OBJ_Score" x="96" y="0" name="inst_3B7A4647" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
