@@ -72,8 +72,7 @@ healthPoints = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Player Shoot
-if (keyboard_check(vk_space))
+            <string>if (keyboard_check(vk_space))
 {
     if(alarm[0] = -1)
     {
@@ -82,7 +81,7 @@ if (keyboard_check(vk_space))
     //TODO: FIX THE SPAWN POINT WHEN MOVING UP AND DOWN
 }
 
-//Player Movement
+
 //Limit Movement to stay within the border of the game
 
 x = min(x, room_width - 70);
@@ -120,7 +119,11 @@ else if (keyboard_check(vk_right))
 //Player Death
 image_alpha = healthPoints/100;
 if healthPoints &lt;= 0
-game_end();
+{   
+    instance_destroy();   
+    score = 0;
+    room_goto(RM_MainMenu); 
+}
 </string>
           </argument>
         </arguments>
