@@ -78,7 +78,6 @@ healthPoints = 100;
     {
         alarm = 5;
     }
-    //TODO: FIX THE SPAWN POINT WHEN MOVING UP AND DOWN
 }
 
 
@@ -94,16 +93,10 @@ y = max(y, 100);
 if (keyboard_check(vk_up))
 {
     vspeed = -3;
-    image_angle = 10;
 }
 else if (keyboard_check(vk_down))
 {
     vspeed = 3;
-    image_angle = 350;
-}
-else
-{
-    image_angle = 0;
 }
 
 if (keyboard_check(vk_left))
