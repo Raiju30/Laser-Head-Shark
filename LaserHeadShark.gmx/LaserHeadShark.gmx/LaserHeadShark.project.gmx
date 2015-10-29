@@ -8,7 +8,9 @@
   <sprites name="sprites">
     <sprite>sprites\SP_LaserShark</sprite>
     <sprite>sprites\SP_LaserBolt</sprite>
-    <sprite>sprites\enemy01</sprite>
+    <sprite>sprites\SP_enemy01</sprite>
+    <sprite>sprites\SP_enemy02</sprite>
+    <sprite>sprites\SP_enemy03</sprite>
     <sprites name="Main_Menu">
       <sprite>sprites\spr_Play</sprite>
     </sprites>
@@ -24,8 +26,12 @@
     <object>objects\OBJ_LaserShark</object>
     <object>objects\OBJ_LaserBolt</object>
     <object>objects\OBJ_Enemy01</object>
+    <object>objects\OBJ_Enemy02</object>
+    <object>objects\OBJ_Enemy03</object>
     <object>objects\OBJ_Score</object>
     <object>objects\OBJ_Spawn</object>
+    <object>objects\OBJ_Spawn2</object>
+    <object>objects\OBJ_Spawn3</object>
     <object>objects\OBJ_PlayButton</object>
   </objects>
   <rooms name="rooms">
