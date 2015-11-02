@@ -72,12 +72,19 @@ healthPoints = 100;
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>//Player Shooting Primary Weapon
 //if (keyboard_check(vk_space))
 //{
+=======
+            <string>//if (keyboard_check(vk_space))
+//{
+    //this alarm is used to trigger the creation of the laser bolt
+>>>>>>> origin/master
     if(alarm[0] = -1)
     {
-        alarm = 5;
+        //the number of frames between each laser bolt
+        alarm = 10;
     }
 //}
 
@@ -89,27 +96,48 @@ x = max(x, 70);
 y = min(y, room_height - 30);
 y = max(y, 100);
 
-//Movement Controls Begin
+useKeyboard = false;
+if (useKeyboard)
+{
+    //Keyboard Movement Controls Begin
 
-if (keyboard_check(vk_up))
-{
-    vspeed = -3;
-}
-else if (keyboard_check(vk_down))
-{
-    vspeed = 3;
-}
+    if (keyboard_check(vk_up))
+    {
+        vspeed = -3;
+    }
+    else if (keyboard_check(vk_down))
+    {
+        vspeed = 3;
+    }
 
-if (keyboard_check(vk_left))
-{
-    hspeed = -2;
+    if (keyboard_check(vk_left))
+    {
+        hspeed = -2;
+    }
+    else if (keyboard_check(vk_right))
+    {
+        hspeed = 3;
+    }
+    //Keyboard Movement Controls End
 }
-else if (keyboard_check(vk_right))
+else
 {
-    hspeed = 3;
-}
-// Movement Controls End
+    //Mouse Movement Controls Begin
+    //Stops sprite from shaking
+    distFromMouse = point_distance(x,y,mouse_x,mouse_y);
+    if (distFromMouse &lt; 5)
+    {
+        speed = 0;
+    }
+    else
+    {
+       speed = 3;
+       direction = point_direction(x,y,mouse_x,mouse_y); 
+    }
+    
 
+    //Mouse Movement Controls End
+}
 //Player Death
 image_alpha = healthPoints/100;
 if healthPoints &lt;= 0
