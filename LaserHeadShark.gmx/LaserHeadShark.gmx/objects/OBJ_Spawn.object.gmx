@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if floor(random(100)) &lt; 1
-{
-    instance_create(room_width, random(room_height), OBJ_Enemy01);
-}
+            <string>S_EnemySpawnRates();
 </string>
           </argument>
         </arguments>

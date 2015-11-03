@@ -11,6 +11,7 @@
     <sprite>sprites\SP_enemy01</sprite>
     <sprite>sprites\SP_enemy02</sprite>
     <sprite>sprites\SP_enemy03</sprite>
+    <sprite>sprites\SP_enemy04</sprite>
     <sprites name="Main_Menu">
       <sprite>sprites\spr_Play</sprite>
     </sprites>
@@ -21,6 +22,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\S_EnemyMove.gml</script>
+    <script>scripts\S_EnemySpawnRates.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_score</font>
@@ -31,10 +33,9 @@
     <object>objects\OBJ_Enemy01</object>
     <object>objects\OBJ_Enemy02</object>
     <object>objects\OBJ_Enemy03</object>
+    <object>objects\OBJ_TurtleEnemy</object>
     <object>objects\OBJ_Score</object>
     <object>objects\OBJ_Spawn</object>
-    <object>objects\OBJ_Spawn2</object>
-    <object>objects\OBJ_Spawn3</object>
     <object>objects\OBJ_PlayButton</object>
   </objects>
   <rooms name="rooms">
