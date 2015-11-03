@@ -101,7 +101,7 @@ x = max(x, 70);
 y = min(y, room_height - 30);
 y = max(y, 100);
 
-useKeyboard = false;
+useKeyboard = true;
 if (useKeyboard)
 {
     //Keyboard Movement Controls Begin
