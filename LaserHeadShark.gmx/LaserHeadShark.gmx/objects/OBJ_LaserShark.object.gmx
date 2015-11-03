@@ -90,7 +90,7 @@ x = max(x, 70);
 y = min(y, room_height - 30);
 y = max(y, 100);
 
-useKeyboard = true;
+useKeyboard = false;
 if (useKeyboard)
 {
     //Keyboard Movement Controls Begin
@@ -125,7 +125,7 @@ else
     }
     else
     {
-       speed = 3;
+        speed = 5;
        direction = point_direction(x,y,mouse_x,mouse_y); 
     }
     
