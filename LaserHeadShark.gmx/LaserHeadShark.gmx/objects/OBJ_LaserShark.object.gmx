@@ -72,26 +72,15 @@ healthPoints = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <string>//Player Shooting Primary Weapon
-//if (keyboard_check(vk_space))
-//{
-=======
             <string>//if (keyboard_check(vk_space))
 //{
     //this alarm is used to trigger the creation of the laser bolt
->>>>>>> origin/master
-=======
-            <string>if (keyboard_check(vk_space))
-{
->>>>>>> parent of 0723b72... Created Enemy Move script
     if(alarm[0] = -1)
     {
         //the number of frames between each laser bolt
         alarm = 10;
     }
-}
+//}
 
 
 //Limit Movement to stay within the border of the game
