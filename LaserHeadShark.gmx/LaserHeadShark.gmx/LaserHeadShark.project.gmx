@@ -15,6 +15,9 @@
     <sprites name="Main_Menu">
       <sprite>sprites\spr_Play</sprite>
     </sprites>
+    <sprites name="HUD">
+      <sprite>sprites\SP_BlackBar</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_Water</background>
@@ -34,9 +37,14 @@
     <object>objects\OBJ_Enemy02</object>
     <object>objects\OBJ_Enemy03</object>
     <object>objects\OBJ_TurtleEnemy</object>
-    <object>objects\OBJ_Score</object>
     <object>objects\OBJ_Spawn</object>
-    <object>objects\OBJ_PlayButton</object>
+    <objects name="HUD_Objects">
+      <object>objects\OBJ_Score</object>
+      <object>objects\OBJ_BlackBar</object>
+    </objects>
+    <objects name="Menu_Objects">
+      <object>objects\OBJ_PlayButton</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\RM_MainMenu</room>

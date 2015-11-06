@@ -94,7 +94,8 @@ if healthPoints &lt;= 0
 }
 
 //Limit Movement to stay within the border of the game
-S_EnemyMove();
+y = min(y, room_height - 50);
+y = max(y, 120);
 </string>
           </argument>
         </arguments>
