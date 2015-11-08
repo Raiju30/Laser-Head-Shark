@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>S_EnemySpawnRates();
+            <string>if(global.pause)
+{
+    exit;
+}
+S_EnemySpawnRates();
 </string>
           </argument>
         </arguments>
