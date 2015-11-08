@@ -41,8 +41,8 @@
     <object>objects\OBJ_Spawn</object>
     <object>objects\OBJ_TurtleEnemy</object>
     <objects name="HUD_Objects">
-      <object>objects\OBJ_Score</object>
       <object>objects\OBJ_Health</object>
+      <object>objects\OBJ_Score</object>
       <object>objects\OBJ_BlackBar</object>
     </objects>
     <objects name="Menu_Objects">

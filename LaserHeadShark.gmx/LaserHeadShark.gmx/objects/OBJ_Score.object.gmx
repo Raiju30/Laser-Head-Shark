@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_orange);
-draw_set_font(f_score);
-draw_set_halign(fa_right);
-
+            <string>
 score = 0;
 </string>
           </argument>
@@ -52,7 +49,10 @@ score = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(view_xview+700, view_yview+10, "Score: " + string(score));
+            <string>scoreColor = draw_set_color(c_orange);
+scoreFont = draw_set_font(f_score);
+scoreAlign = draw_set_halign(fa_right);
+scoreText = draw_text(view_xview+960, view_yview+10, "Score: " + string(score));
 </string>
           </argument>
         </arguments>
