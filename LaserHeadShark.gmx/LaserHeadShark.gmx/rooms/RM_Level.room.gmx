@@ -53,8 +53,6 @@
   <instances>
     <instance objName="OBJ_LaserShark" x="96" y="96" name="inst_4D51BCAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="OBJ_Spawn" x="672" y="64" name="inst_99AAA665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="672" y="128" name="inst_B6A16ABB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="672" y="160" name="inst_A98C8081" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="OBJ_Score" x="480" y="160" name="inst_C3D30717" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="OBJ_BlackBar" x="0" y="0" name="inst_48AD8390" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
