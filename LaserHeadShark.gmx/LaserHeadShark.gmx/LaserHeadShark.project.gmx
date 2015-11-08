@@ -18,6 +18,7 @@
     </sprites>
     <sprites name="HUD">
       <sprite>sprites\SP_BlackBar</sprite>
+      <sprite>sprites\SP_pause</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -44,6 +45,7 @@
       <object>objects\OBJ_Health</object>
       <object>objects\OBJ_Score</object>
       <object>objects\OBJ_BlackBar</object>
+      <object>objects\OBJ_Pause</object>
     </objects>
     <objects name="Menu_Objects">
       <object>objects\OBJ_PlayButton</object>
