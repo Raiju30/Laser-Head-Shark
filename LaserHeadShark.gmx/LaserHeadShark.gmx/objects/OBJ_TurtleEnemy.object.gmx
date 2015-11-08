@@ -142,6 +142,7 @@ y = max(y, 120);
           <argument>
             <kind>1</kind>
             <string>other.healthPoints -= 100;
+OBJ_Health.playerHealth -= 100;
 </string>
           </argument>
         </arguments>

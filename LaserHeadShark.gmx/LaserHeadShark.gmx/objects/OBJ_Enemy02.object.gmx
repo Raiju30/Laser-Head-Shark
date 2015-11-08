@@ -141,6 +141,7 @@ S_EnemyMove();
           <argument>
             <kind>1</kind>
             <string>other.healthPoints -= 50;
+OBJ_Health.playerHealth -= 50;
 </string>
           </argument>
         </arguments>

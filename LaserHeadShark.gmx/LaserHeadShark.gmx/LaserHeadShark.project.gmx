@@ -30,6 +30,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_score</font>
+    <font>fonts\f_health</font>
   </fonts>
   <objects name="objects">
     <object>objects\OBJ_LaserShark</object>
@@ -41,6 +42,7 @@
     <object>objects\OBJ_TurtleEnemy</object>
     <objects name="HUD_Objects">
       <object>objects\OBJ_Score</object>
+      <object>objects\OBJ_Health</object>
       <object>objects\OBJ_BlackBar</object>
     </objects>
     <objects name="Menu_Objects">

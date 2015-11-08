@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_orange);
-draw_set_font(f_score);
-draw_set_halign(fa_right);
+            <string>draw_set_color(c_red);
+draw_set_font(f_health);
+draw_set_halign(fa_left);
 
-score = 0;
+playerHealth = OBJ_LaserShark.healthPoints;
 </string>
           </argument>
         </arguments>
@@ -52,7 +52,7 @@ score = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(view_xview+700, view_yview+10, "Score: " + string(score));
+            <string>draw_text(view_xview+100, view_yview+10, string(playerHealth));
 </string>
           </argument>
         </arguments>

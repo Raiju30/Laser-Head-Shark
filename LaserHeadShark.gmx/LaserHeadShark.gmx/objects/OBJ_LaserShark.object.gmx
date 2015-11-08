@@ -97,20 +97,20 @@ if (useKeyboard)
 
     if (keyboard_check(vk_up))
     {
-        vspeed = -3;
+        vspeed = -4;
     }
     else if (keyboard_check(vk_down))
     {
-        vspeed = 3;
+        vspeed = 4;
     }
 
     if (keyboard_check(vk_left))
     {
-        hspeed = -2;
+        hspeed = -4;
     }
     else if (keyboard_check(vk_right))
     {
-        hspeed = 3;
+        hspeed = 4;
     }
     //Keyboard Movement Controls End
 }
@@ -125,7 +125,7 @@ else
     }
     else
     {
-        speed = 5;
+        speed = 4;
        direction = point_direction(x,y,mouse_x,mouse_y); 
     }
     
@@ -133,10 +133,10 @@ else
     //Mouse Movement Controls End
 }
 //Player Death
-image_alpha = healthPoints/100;
 if healthPoints &lt;= 0
 {   
-    instance_destroy();   
+    instance_destroy();  
+    OBJ_Health.playerHealth = 0; 
     score = 0;
     room_goto(RM_MainMenu); 
 }
